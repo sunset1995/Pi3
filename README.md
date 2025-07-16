@@ -1,4 +1,4 @@
-<h1 align="center">🌌 &pi;³: Scalable Permutation-Equivariant Visual Geometry Learning</h1>
+<h1 align="center">🌌 <em>&pi;³</em>: Scalable Permutation-Equivariant Visual Geometry Learning</h1>
 
 <p align="center">
     <a href="[PAPER_LINK_HERE]" target="_blank">
@@ -99,7 +99,7 @@ Here is a minimal example of how to run the model on a batch of images.
 ```python
 import torch
 from pi3.models.pi3 import Pi3
-from utils import load_images_as_tensor # Assuming you have a helper function
+from pi3.utils.basic import load_images_as_tensor # Assuming you have a helper function
 
 # --- Setup ---
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -108,7 +108,8 @@ model = Pi3.from_pretrained("yyfz233/Pi3").to(device).eval()
 
 # --- Load Data ---
 # Load a sequence of N images into a tensor
-# imgs shape: (N, 3, H, W)
+# imgs shape: (N, 3, H, W).
+# imgs value: [0, 1]
 imgs = load_images_as_tensor('path/to/your/data', interval=10).to(device)
 
 # --- Inference ---
@@ -122,7 +123,7 @@ with torch.no_grad():
         results = model(imgs[None])
 
 print("Reconstruction complete!")
-# Access outputs: results['points'], results['camera_poses'], etc.
+# Access outputs: results['points'], results['camera_poses'] and results['local_points'].
 ```
 
 
