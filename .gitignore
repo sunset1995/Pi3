@@ -1,0 +1,15 @@
+*.pyc
+*.egg-info
+*.pt
+*.pth
+*.zip
+*.tar.gz
+*.render*
+
+**/__pycache__/
+
+.vscode
+ckpts
+
+resize_demo_imgs.py
+img_dir_to_video.py
