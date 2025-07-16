@@ -1,4 +1,4 @@
-# 🌌 $\pi^3$: Scalable Permutation-Equivariant Visual Geometry Learning
+<h1 align="center">🌌 &pi;³: Scalable Permutation-Equivariant Visual Geometry Learning</h1>
 
 <p align="center">
     <a href="[PAPER_LINK_HERE]" target="_blank">
