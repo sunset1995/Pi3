@@ -151,5 +151,4 @@ If you find our work useful, please consider citing:
 
 
 ## 📄 License
-
-This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
+For academic use, this project is licensed under the 2-clause BSD License. See the [LICENSE](./LICENSE) file for details. For commercial use, please contact the authors.
