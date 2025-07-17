@@ -1,10 +1,35 @@
 <h1 align="center">🌌 <em>&pi;³</em>: Scalable Permutation-Equivariant Visual Geometry Learning</h1>
 
+<div align="center">
+    <p>
+        Yifan Wang<sup>1*</sup>&nbsp;&nbsp;
+        Jianjun Zhou<sup>123*</sup>&nbsp;&nbsp;
+        Haoyi Zhu<sup>1</sup>&nbsp;&nbsp;
+        Wenzheng Chang<sup>1</sup>&nbsp;&nbsp;
+        Yang Zhou<sup>1</sup>
+        <br>
+        Zizun Li<sup>1</sup>&nbsp;&nbsp;
+        Junyi Chen<sup>1</sup>&nbsp;&nbsp;
+        Jiangmiao Pang<sup>1</sup>&nbsp;&nbsp;
+        Chunhua Shen<sup>2</sup>&nbsp;&nbsp;
+        Tong He<sup>13†</sup>
+    </p>
+    <p>
+        <sup>1</sup>Shanghai AI Lab &nbsp;&nbsp;&nbsp;
+        <sup>2</sup>ZJU &nbsp;&nbsp;&nbsp;
+        <sup>3</sup>SII
+    </p>
+    <p>
+        <sup>*</sup> Equal Contribution &nbsp;&nbsp;&nbsp;
+        <sup>†</sup> Corresponding Author
+    </p>
+</div>
+
 <p align="center">
     <a href="[PAPER_LINK_HERE]" target="_blank">
     <img src="https://img.shields.io/badge/Paper-00AEEF?style=plastic&logo=arxiv&logoColor=white" alt="Paper">
     </a>
-    <a href="[PROJECT_PAGE_LINK_HERE]" target="_blank">
+    <a href="https://yyfz.github.io/pi3/" target="_blank">
     <img src="https://img.shields.io/badge/Project Page-F78100?style=plastic&logo=google-chrome&logoColor=white" alt="Project Page">
     </a>
     <a href="https://huggingface.co/spaces/yyfz233/Pi3" target="_blank">
@@ -14,10 +39,10 @@
 
 <div align="center">
     <a href="[PROJECT_PAGE_LINK_HERE]">
-        <img src="https://raw.githubusercontent.com/yyfz233/Pi3/main/assets/teaser.gif" width="90%">
+        <img src="assets/main.png" width="90%">
     </a>
     <p>
-        <i>&pi;³ robustly reconstructs 3D scenes and camera poses from an unordered set of images, without needing a fixed reference frame.</i>
+        <i>&pi;³ reconstructs visual geometry without a fixed reference view, achieving robust, state-of-the-art performance.</i>
     </p>
 </div>
 
@@ -143,7 +168,7 @@ If you find our work useful, please consider citing:
 ```bibtex
 @inproceedings{pi3-2025,
   title     = {$\pi^3$: Scalable Permutation-Equivariant Visual Geometry Learning},
-  author    = {},
+  author    = {Yifan Wang and Jianjun Zhou and Haoyi Zhu and Wenzheng Chang and Yang Zhou and Zizun Li and Junyi Chen and Jiangmiao Pang and Chunhua Shen and Tong He},
   booktitle = {Arxiv},
   year      = {2025}
 }

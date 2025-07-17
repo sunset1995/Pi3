@@ -5,6 +5,7 @@
 *.zip
 *.tar.gz
 *.render*
+*.ply
 
 **/__pycache__/
 
