@@ -141,11 +141,14 @@ Our work builds upon several fantastic open-source projects. We'd like to expres
 If you find our work useful, please consider citing:
 
 ```bibtex
-@inproceedings{pi3-2025,
-  title     = {$\pi^3$: Scalable Permutation-Equivariant Visual Geometry Learning},
-  author    = {},
-  booktitle = {Arxiv},
-  year      = {2025}
+@misc{wang2025pi3,
+      title={$\pi^3$: Scalable Permutation-Equivariant Visual Geometry Learning}, 
+      author={Yifan Wang and Jianjun Zhou and Haoyi Zhu and Wenzheng Chang and Yang Zhou and Zizun Li and Junyi Chen and Jiangmiao Pang and Chunhua Shen and Tong He},
+      year={2025},
+      eprint={2507.13347},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.13347}, 
 }
 ```
 
