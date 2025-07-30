@@ -113,16 +113,17 @@ try:
             ctx.save_for_backward(positions)
             ctx.saved_base = base
             ctx.saved_F0 = F0
-            # tokens = tokens.clone() # uncomment this if inplace doesn't work
+            tokens = tokens.clone() # uncomment this if inplace doesn't work
             rope_2d( tokens, positions, base, F0 )
-            ctx.mark_dirty(tokens)
+            #ctx.mark_dirty(tokens)
             return tokens
 
         @staticmethod
         def backward(ctx, grad_res):
             positions, base, F0 = ctx.saved_tensors[0], ctx.saved_base, ctx.saved_F0
+            grad_res = grad_res.clone()
             rope_2d( grad_res, positions, base, -F0 )
-            ctx.mark_dirty(grad_res)
+            #ctx.mark_dirty(grad_res)
             return grad_res, None, None, None
 
 
@@ -133,7 +134,7 @@ try:
             self.F0 = F0
 
         def forward(self, tokens, positions):
-            cuRoPE2D_func.apply( tokens.transpose(1,2).contiguous(), positions.contiguous(), self.base, self.F0 )
+            cuRoPE2D_func.apply( tokens.transpose(1,2), positions, self.base, self.F0 )
             return tokens
 
     RoPE2D = cuRoPE2D
